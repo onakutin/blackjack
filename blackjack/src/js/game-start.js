@@ -11,6 +11,9 @@ export const gameStart = () => {
 		".controls .player .anounce-result"
 	);
 
+	cardsPlayerElm.innerHTML = "";
+	cardsComputerElm.innerHTML = "";
+
 	// shuffle the cards
 	const deck = new Deck();
 	deck.shuffle();
@@ -51,9 +54,6 @@ export const gameStart = () => {
 		);
 		displayCompScore.innerText = `Score: ${compScore}`;
 	};
-
-	cardsPlayerElm.innerHTML = "";
-	cardsComputerElm.innerHTML = "";
 
 	const show_card_player = () => {
 		cardsPlayerElm.innerHTML += `<div class="card face-${newCard.rank}-of-${newCard.suit}"></div>`;
