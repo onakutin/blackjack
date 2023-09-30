@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700;800&display=swap"
         rel="stylesheet">
+    <script type="module" src="./src/js/app.js" defer></script>
     <title>Blackjack</title>
 </head>
 
@@ -16,9 +17,11 @@
     <div class="controls">
         <header>
             <img src="./src/img/icon.png" alt="Idon">
-            <div class="h1"><h1>Blackjack</h1></div>
+            <div class="h1">
+                <h1>Blackjack</h1>
+            </div>
         </header>
-        <input type="submit" value="NEW ROUND">
+        <input class="new-game" type="submit" value="NEW ROUND">
         <div class="player">
             <h2>
                 Dealer
@@ -38,10 +41,10 @@
             <div class="player__score">
                 Score: 0
             </div>
-            
+
             <div class="player__buttons">
-                <input type="submit" value="HIT">
-                <input type="submit" value="STAND">
+                <input class="player-buttons__hit" type="submit" value="HIT">
+                <input class="player-buttons__stand" type="submit" value="STAND">
 
             </div>
 
@@ -51,15 +54,6 @@
     </div>
     <div class="table">
         <div class="cards">
-            <div class="card face-8-of-clubs"></div>
-
-            <div class="card face-5-of-hearts"></div>
-
-        </div>
-        <div class="cards">
-            <div class="card face-8-of-clubs"></div>
-
-            <div class="card face-5-of-hearts"></div>
 
         </div>
     </div>
