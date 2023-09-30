@@ -29,6 +29,13 @@ body {
     background-image: url(../img/bg.jpg);
     display: flex;
     flex-direction: row;
-
+    .table {
+        display: flex;
+        flex-direction: column;
+        .table__cards{
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
