@@ -1,0 +1,35 @@
+$white: #ffffff;
+$cards-background: #54be90;
+$buttons-color: #5782c2;
+$button-border: #d3d3d3;
+$shadow: 0 0 6px #333333;
+
+@import "_controls";
+@import "_cards";
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: red;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-image: url(../img/bg.jpg);
+    display: flex;
+    flex-direction: row;
+
+}
+

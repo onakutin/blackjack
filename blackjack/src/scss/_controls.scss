@@ -1,0 +1,91 @@
+$button-font-size: 1rem;
+
+.controls {
+    background-color: $white;
+    width: 15%;
+    height: 100vh;
+    padding: 1rem;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 1160px) {
+            flex-direction: row
+        }
+        img {
+            max-width: 30%;
+            height: 4vw;
+        }
+        h1 {
+            font-size: 2.8vw;
+            font-weight: 800;
+            align-self: center;
+            margin-left: 3%;
+            @media (min-width: 720px) {
+                    font-size: 2rem;
+            @media (min-width: 1160px) {
+                    font-size: 2vw;
+                    
+                    }
+                }
+        }
+    }
+    .player {
+        margin: 2rem 0;
+        border-right: 2px solid $buttons_color;
+        padding-right: 0.5rem;
+        .player__score {
+            border: 2px solid $buttons-color;
+            text-align: center;
+            font-size: $button-font-size;
+            font-weight: 700;
+            padding: 0.5rem;
+            color: $buttons-color;
+            border-radius: 0.5rem;
+            margin: 1rem;
+        }   
+        div:last-child {
+            font-weight: 800;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+h2 {
+    // margin-right: 0.5rem;
+    text-align: right;
+    font-weight: 800;
+}
+
+input {
+    background-color: $buttons-color;
+    color: $white;
+    border-color: $button-border;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: $button-font-size;
+    padding: 0.5rem;
+    transition: transform .1s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.player__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+    input {
+        width: 100%;
+        @media (min-width: 800px) {
+            width: 49%;
+        }
+    }
+}
